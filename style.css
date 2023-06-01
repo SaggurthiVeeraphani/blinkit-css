@@ -1,0 +1,218 @@
+@import url(./variables.css);
+*{
+    margin:0;
+    padding:0;
+    /* This will include the margin and padding in the 100 percentage */
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+/* Header section */
+header .container{
+    display:flex;
+    width:100%;
+    top:0;
+    height:67px;
+    align-items:center;
+    position:fixed;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    z-index:1000;
+    background-color: var(--color-white);
+}
+.logo, .location, .search-bar, .login{
+    margin: 0px 25px;
+}
+.location .location-title{
+    margin-bottom: 3px;
+    font-size: 15px;
+    font-weight: var(--fw-800);
+    letter-spacing: 0.5px;
+}
+.location .location-desc{
+    font-size: 11px;
+}
+.location-desc .fa-sort-down{
+    transform: translateY(-2px);
+    padding-left: 5px;
+}
+.search-bar{
+    width:52%;
+    border:1px solid rgba(0,0,0,0.04);
+    border-radius:5px;
+    background: var(--color-grey-2);
+    color:var(--color-grey);
+    height:38px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:13px;
+}
+.search-bar input{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-size: 10px;
+    font-weight: 100;
+    width: 100%;
+}
+.search-input{
+    width: 100%;
+}
+.search-bar .fa-magnifying-glass{
+    width: 13px;
+    color: var(--color-black);
+}
+.login{
+    font-size: 11px;
+    color:var(--color-grey)
+}
+.cart button{
+    border-radius: 5px;
+    padding: 13px;
+    background-color: var(--color-green);
+    color:var(--color-white);
+    font-size:11px;
+    font-weight: var(--fw-700);
+    border:none;
+    
+}
+
+/* main Section */
+.wrapper {
+    position: relative;
+    align-items: center;
+    display: flex;
+    top: 68px;
+    flex-direction: column;
+}
+.main-container{
+    max-width: 1100px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.banner-2{
+    display: flex;
+    gap: 20px;
+    overflow: auto scroll;
+    margin: 0 14px;
+}
+/* this webkit scroll bar is used to hide the scroll bar on screen */
+/* .banner-2::-webkit-scrollbar{
+    display: none;
+} */
+
+.banner-2 .banner-img img{
+    height: 165px;
+    width: 285px;
+}
+
+.categories{
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    /* grid-template-rows: 2 50%; */
+}
+
+.section-3-img img{
+    width: 100%;
+}
+.items{
+    display:flex;
+    flex-direction: column;
+    margin: 0 14px
+}
+.items .title{
+    display:flex;
+    justify-content: space-between;
+}
+.title .category-name{
+    font-weight: var(--fw-600);
+}
+.title a{
+    color:var(--color-green);
+    text-decoration: none;
+}
+.list-items{
+    
+    display: flex;
+    column-gap: 22px;
+    overflow: auto scroll;
+    
+
+}
+
+.list-items .item{
+    width: 15%;
+    border: 0.5px solid rgb(232, 232, 232);
+    box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
+    border-radius: 8px;
+    padding: 20px;
+
+    
+}
+
+.item .item-img img{
+    width: 100%;
+}
+
+.item-details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.item-details .timer{
+    font-size: 7px;
+    font-weight: bolder;
+    background-color: var(--color-grey-2);
+    width: 36%;
+    padding: 3px;
+}
+
+.item-details .item-name{
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.item-details .item-weight{
+    font-size: 10px;
+    color: var(--color-grey);
+}
+
+.item-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-price .price{
+    font-size: 10px;
+    font-weight: var(--fw-800);
+}
+
+.item-price button{
+    font-size: 10px;
+    font-weight: var(--fw-800);
+    text-transform: uppercase;
+    padding: 3px 9px;
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+    border-radius: 3px;
+    background-color: var(--color-lightest-green);
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    top: 85px;
+    background-color: var(--color-grey-2);
+}
+
+.fa-heart{
+    color: red;
+}
+
